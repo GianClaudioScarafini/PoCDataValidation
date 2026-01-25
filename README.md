@@ -8,11 +8,20 @@ the result will be added to a powerBi dashboard to red flag infoamtion that are 
 
 ```mermaid
 sequenceDiagram
-    GraphQL->>terminal: this is the jason file
-    DataValidationsSets-->terminal:"sent the sets of type validations"
-    configfile-->terminal: what are the parameters to check and their validation
+    box Blue Extract 
+    participant GraphQL
+    End
+    box red UI Trasfrom
+    participant Terminal
+    participant DataValidationSets
+    participant ConfigFile
+    end
+    GraphQL ->> Terminal: Provide JSON file
+    DataValidationSets ->> Terminal: Send validation rule sets
+    ConfigFile ->> Terminal: Parameters to validate + rules
 
-    terminal --x .json&csv: add columns of data compliants
-    .json&csv <<-->> PowerBi: link
+    Terminal --x JSON/CSV: Add data compliance columns
+    JSON/CSV <<-->> PowerBI: Data link
+
 
 ```
