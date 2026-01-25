@@ -1,0 +1,21 @@
+{
+    "ParameterNameExistence" : {        
+        "Category": {
+            "reulst": [
+                "Basic Wall",
+                "Basic Floor",
+                "Doors",
+                "Windows"   
+            ]
+        },
+        "parameters": [
+            "Area",
+            "Volume",
+            "Category",
+            "Asset Type Mark",
+            "Asset Mark",
+            "Uniclass.Ss.description",
+            "Uniclass.Ss.Number"
+        ]
+    }
+}
