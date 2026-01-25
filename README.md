@@ -11,10 +11,16 @@ sequenceDiagram
     box Blue Extract 
     participant GraphQL
     End
+
     box red UI Trasfrom
     participant Terminal
     participant DataValidationSets
     participant ConfigFile
+    end
+    box green View
+    participant JSON/CSV
+    participant PowerBI
+
     end
     GraphQL ->> Terminal: Provide JSON file
     DataValidationSets ->> Terminal: Send validation rule sets
