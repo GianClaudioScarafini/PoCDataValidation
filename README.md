@@ -24,7 +24,7 @@ sequenceDiagram
     end
     GraphQL ->> Terminal: Provide JSON file
     DataValidationSets ->> Terminal: Send validation rule sets
-    ConfigFile ->> Terminal: Parameters to validate + rules
+    ConfigFile ->> Terminal: Parameters to validate + rules (ReGex)
 
     Terminal --x JSON/CSV: Add data compliance columns
     JSON/CSV <<-->> PowerBI: Data link
