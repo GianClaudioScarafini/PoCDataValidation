@@ -7,31 +7,12 @@ the result will be added to a powerBi dashboard to red flag infoamtion that are 
 
 
 ```mermaid
----
-title: Animal example
----
-classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
-    }
+sequenceDiagram
+    GraphQL->>terminal: this is the jason file
+    DataValidationsSets-->terminal:"sent the sets of type validations"
+    configfile-->terminal: what are the parameters to check and their validation
+
+    terminal --x .json&csv: add columns of data compliants
+    .json&csv <<-->> PowerBi: link
 
 ```
