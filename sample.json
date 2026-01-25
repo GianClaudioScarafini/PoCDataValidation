@@ -1,0 +1,40 @@
+{
+    "data": {
+    "elementsByElementGroup": {
+        "pagination": {
+        "cursor": "Y3Vyc29yX3Rva2VuX2FiYzEyMw=="
+        },
+        "results": [
+            {   
+                "id": "YWVjZH42SUpGQX...",
+                "name": "Basic Wall [12345]",
+                "properties": {
+                "results": [
+                    {
+                    "name": "Area",
+                    "value": "15.50"
+                    },
+                    {
+                    "name": "Volume",
+                    "value": "3.10"
+                    },
+                    {
+                    "name": "Category",
+                    "value": "Walls"
+                    },
+                    {
+                    "name": "Asset Type Mark",
+                    "value": "Walls"
+                    },
+                    {
+                    "name":  "Asset Mark",
+                    "value": "Walls"
+                    }
+                ]
+                }
+            }
+        
+        ]
+    }
+    }
+}
