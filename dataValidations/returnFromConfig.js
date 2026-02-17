@@ -12,6 +12,11 @@ const results = jsonData.data.elementsByElementGroup.results;
 
 
 
+
+
+
+
+
 var mycateconfig = config.ParameterNameExistence.Category.results
 console.log("Category from config:", mycateconfig)
 var parametersconfig = config.ParameterNameExistence.Parameters
