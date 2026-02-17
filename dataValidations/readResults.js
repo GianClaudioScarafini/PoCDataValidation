@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // Read the JSON file
-const data = fs.readFileSync('./sample.json', 'utf8');
+const data = fs.readFileSync('./models/models.json', 'utf8');
 const jsonData = JSON.parse(data);
 
 // Get all results
@@ -28,4 +28,6 @@ results.forEach((result, index) => {
     });
 });
 
-console.log("Parameter List:", parameterList);
+// console.log("Parameter List:", parameterList);
+
+console.log(results)

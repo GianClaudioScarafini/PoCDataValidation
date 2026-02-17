@@ -1,14 +1,14 @@
 {
     "ParameterNameExistence" : {        
         "Category": {
-            "reulst": [
+            "results": [
                 "Basic Wall",
                 "Basic Floor",
                 "Doors",
                 "Windows"   
             ]
         },
-        "parameters": [
+        "Parameters": [
             "Area",
             "Volume",
             "Category",
